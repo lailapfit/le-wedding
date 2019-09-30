@@ -1,5 +1,16 @@
 <template>
   <div class="location">
-    <h1>This is the location details page</h1>
+    <location-details msg="WELCOME TO MAHEKAL BEACH RESORT" />
   </div>
 </template>
+
+<script>
+import LocationDetails from "@/components/LocationDetails.vue";
+
+export default {
+  name: "location",
+  components: {
+    LocationDetails
+  }
+};
+</script>

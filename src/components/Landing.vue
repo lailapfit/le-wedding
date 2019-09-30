@@ -6,7 +6,7 @@
                 <br><br><br><br>
                 <br><br><br><br>
                 <h1>{{ msg }}</h1>
-                <router-link class="rsvp-button" to="/rsvp">RSVP</router-link>
+                <router-link class="button" to="/rsvp">RSVP</router-link>
             </div>
 
         <h2>Location</h2>
@@ -22,11 +22,11 @@
         <p>Airport: <br>
         Cancun International Aeropuerto (CUN)</p>
         <p>Estimated time from CUN to Mahekal: 60 minutes</p>
-
+        <router-link class="button" to="/location">Details</router-link>
         <div class="countdown background-img-720">
             <div class="countdown1">
                 <div class="countdown2">
-                    <h4>S A V E &nbsp T H E  &nbsp D A T E</h4>
+                    <h4>S A V E &nbsp; T H E  &nbsp; D A T E</h4>
                     <h5>September 5th, 2020</h5>
                     <Countdown deadline="September 5, 2020"></Countdown>
                 </div>
@@ -39,7 +39,7 @@
             <h2>R S V P</h2>
             <p>_______________</p>
             <h4>Please respond by July 05, 2020</h4>
-            <router-link class="rsvp-button" to="/rsvp">RSVP</router-link>
+            <router-link class="button" to="/rsvp">RSVP</router-link>
             <div class="rsvp background-img-560">
                 
             </div>
@@ -65,6 +65,8 @@ export default {
 <style scoped>
 h1 {
     color: white;
+    word-spacing: 0.005em;
+    letter-spacing: 1em;
 }
 h4 {
     color: black;
@@ -106,16 +108,21 @@ h4 {
     margin: auto;
 }
 
-.rsvp-button {
+.button {
   color: black;
   border: 2px solid white;
+  background: white;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  font-weight: bold;
 }
 
-.rsvp-button:hover {
-  background-color: white; 
+.button:hover {
+  background: #fe7e01;
+  border: 2px solid #fe7e01;
+  color: white; 
+font-weight: bold;
 }
 </style>

@@ -1,9 +1,13 @@
 <template>
   <div id="app">
     <div id="nav">
+      Laila & Cuong
       <router-link to="/">Welcome</router-link> |
       <router-link to="/location">Location</router-link> |
       <router-link to="/rsvp">RSVP</router-link> | 
+      <!-- <router-link to="/accommodation">Accommodation</router-link> |  -->
+      <router-link to="/localknowledge">Local Knowledge</router-link> | 
+      <router-link to="/itinerary">Itinerary</router-link>
     </div>
     <router-view />
   </div>
@@ -18,15 +22,19 @@
   color: #2c3e50;
 }
 #nav {
-  padding: 30px;
+  padding-top: 2%;
+  padding-bottom: 1%;
 }
-
+#nav a:first-child {
+  padding-left: 60%;
+}
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
-}
+  color: #fe7e01;
+  text-decoration: none;
 
+}
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: black;
 }
 </style>
