@@ -6,23 +6,24 @@
                 <br><br><br><br>
                 <br><br><br><br>
                 <h1>{{ msg }}</h1>
+                <h3>______________</h3>
                 <router-link class="button" to="/rsvp">RSVP</router-link>
             </div>
 
         <h2>Location</h2>
-        <p>_______________</p> <br>
+        <p>_______________</p>
         <h4>Mahekal Beach Resort</h4>
         <p>Ceremony: La Fuega Beach </p>
         <p>Reception: Las Olas Restaurante </p>
-        <p>__________________ * ____________________</p> <br>
-        <p>Address: <br>
+
+        <!-- <p>Address: <br>
         Calle 38, Entre Avenida 5a Y Zona Federal Maritima, <br> 
         Centro, 77710 <br> 
         Playa del Carmen, Q.R., Mexico</p> <br>
         <p>Airport: <br>
         Cancun International Aeropuerto (CUN)</p>
-        <p>Estimated time from CUN to Mahekal: 60 minutes</p>
-        <router-link class="button" to="/location">Details</router-link>
+        <p>Estimated time from CUN to Mahekal: 60 minutes</p> -->
+        <router-link class="button" to="/location">Details</router-link><br><br><br>
         <div class="countdown background-img-720">
             <div class="countdown1">
                 <div class="countdown2">
@@ -71,6 +72,9 @@ h1 {
 h4 {
     color: black;
 }
+h3 {
+    color: white;
+}
 .intro {
     background-image: url("../assets/teatre.jpg");
 }
@@ -109,20 +113,28 @@ h4 {
 }
 
 .button {
-  color: black;
-  border: 2px solid white;
-  background: white;
-  padding: 10px 20px;
+  color: white;
+  border: 2px solid #abd2fe;
+  background: #abd2fe;
+  border-radius: 10px;
+  padding: 10px 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-weight: bold;
+  opacity: 0.9;
 }
 
 .button:hover {
-  background: #fe7e01;
-  border: 2px solid #fe7e01;
+background: #fe7433;
+  border: 2px solid #fe7433;
+  opacity: 0.9;
+  border-radius: 10px;
   color: white; 
-font-weight: bold;
+  font-weight: bold;
+}
+
+.first {
+   background-image: url("../assets/noise.png");
 }
 </style>
