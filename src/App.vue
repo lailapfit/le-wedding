@@ -1,5 +1,9 @@
 <template>
   <div id="app">
+       <link rel="stylesheet" 
+        href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" 
+        crossorigin="anonymous">
     <div id="nav">
      Laila & Cuong
      <router-link to="/">Welcome</router-link> |
@@ -8,7 +12,6 @@
       <!-- <router-link to="/accommodation">Accommodation</router-link> |  -->
       <router-link to="/localknowledge"> Local Knowledge</router-link>  |
       <router-link to="/itinerary">Itinerary</router-link>  
-      
     </div>
     <router-view />
   </div>
@@ -28,7 +31,7 @@
 }
 #nav a {
   font-weight: bold;
-  color: #fe7433;
+  color: #1C95E3;
   text-decoration: none;
 }
 

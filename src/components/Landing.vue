@@ -23,7 +23,7 @@
         <p>Airport: <br>
         Cancun International Aeropuerto (CUN)</p>
         <p>Estimated time from CUN to Mahekal: 60 minutes</p> -->
-        <router-link class="button" to="/location">Details</router-link><br><br><br>
+        <router-link class="button" to="/location">Details</router-link><br><br>
         <div class="countdown background-img-720">
             <div class="countdown1">
                 <div class="countdown2">
@@ -40,11 +40,8 @@
             <h2>R S V P</h2>
             <p>_______________</p>
             <h4>Please respond by July 05, 2020</h4>
-            <router-link class="button" to="/rsvp">RSVP</router-link>
-            <div class="rsvp background-img-560">
-                
-            </div>
-
+            <router-link class="button" to="/rsvp">RSVP</router-link><br><br>
+            <div class="rsvp background-img-560"></div>
         </div>
     </div>
 </template>
@@ -114,10 +111,10 @@ h3 {
 
 .button {
   color: white;
-  border: 2px solid #abd2fe;
-  background: #abd2fe;
+  border: 2px solid #33BDFE;
+  background: #33BDFE;
   border-radius: 10px;
-  padding: 10px 15px;
+  padding: 5px 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -137,4 +134,5 @@ background: #fe7433;
 .first {
    background-image: url("../assets/noise.png");
 }
+
 </style>
