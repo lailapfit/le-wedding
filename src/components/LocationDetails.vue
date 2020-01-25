@@ -12,34 +12,40 @@
       </div>
     </div>
     <h2>AMENITIES</h2>
-    <table class="amenities">
-      <tr>
-        <th><img src="../assets/beach.png"></th>
-        <th><img src="../assets/pool.png"></th>
-        <th><img src="../assets/spoon.png"></th>
-        <th><img src="../assets/artist.png"></th>
-      </tr>
-      <tr>
-        <td>BEACH <br> FRONT</td>
-        <td>4 <br> POOLS</td>
-        <td>4 <br> RESTAURANTS</td>
-        <td>POTTERY <br> PAINTING</td>
-      </tr>
-      <br>
-      <tr>
-        <th><img src="../assets/facial-mask.png"></th>
-        <th><img src="../assets/shop.png"></th>
-        <th><img src="../assets/food-and-restaurant.png"></th>
-        <th><img src="../assets/snorkel.png"></th>
-      </tr>
-      <tr>
-        <td>REVIVE <br> SPA</td>
-        <td>ICE-CREAM SHOP</td>
-        <td>3 <br> BARS</td>
-        <td>DIVE-CENTER</td>
-      </tr>
-      <br>
-    </table>
+    <div class="amenities">
+      <div class="amenities-first">
+        <img src="../assets/beach.png"><br>
+        <span>BEACH FRONT</span>
+      </div>
+      <div>
+        <img src="../assets/pool.png"><br>
+        <span>4 POOLS</span>
+      </div>
+      <div>
+        <img src="../assets/spoon.png"><br>
+        <span>4 RESTAURANTS</span>
+      </div>
+      <div>
+        <img src="../assets/artist.png"><br>
+        <span>POTTERY PAINTING</span>
+      </div>
+      <div>
+        <img src="../assets/facial-mask.png"><br>
+        <span>REVIVE SPA</span>
+      </div>
+       <div>
+        <img src="../assets/shop.png"><br>
+        <span>ICE-CREAM SHOP</span>
+      </div>
+      <div>
+        <img src="../assets/food-and-restaurant.png"><br>
+         <span>3 BARS</span>
+      </div>
+      <div>
+        <img src="../assets/snorkel.png"><br>
+        <span>DIVE-CENTER</span>
+      </div>
+    </div>
 
     <div class="mahekal background-img-720"></div>
     <div class="intro-accommodation">
@@ -51,17 +57,20 @@
         <br>
        <i class="fas fa-ellipsis-h"></i>
        <br><br>
-      <h2>ACCOMMODATION</h2>
+      <!-- <h2>ACCOMMODATION</h2> -->
     </div>
-    <div class="mahekal-accommodation">
+  <agile>
+    <div class="mahekal-accommodation slide">
       <div class="accommodation">
+        <h3>ACCOMMODATION <span style="color: black;"> #MAHEKAL</span></h3>
         <div class="garden-view">
+          <!-- <h3>M A H E K A L</h3> -->
           <div class="image-container">
             <img src="../assets/garden-view.jpg"/>
             <div class="image-content">Garden View</div>
           </div>
           <p>
-            <i class="fas fa-child fa-4x"></i><i class="fas fa-child fa-4x"></i><i class="fas fa-plus fa-sm"></i><i class="fas fa-child fa-2x"></i><i class="fas fa-equals fa-sm"></i><span style="font-size: 30px; padding-left: 0.5em;"><strong style="color: white">$262.11</strong></span><span>per night</span><br>
+            <i class="fas fa-child fa-4x"></i><i class="fas fa-child fa-4x"></i><i class="fas fa-plus fa-sm"></i><i class="fas fa-child fa-2x"></i><i class="fas fa-equals fa-sm"></i><span class="accommodation-prices accommodation-padding"><strong>$262.11</strong></span><span>per night</span><br>
             <i class="fas fa-angle-right fa-sm"></i> 2 adults and 1 child (4 yrs and younger)<br>
           </p>
           <p>
@@ -69,7 +78,7 @@
              <i class="fas fa-plus fa-sm"></i> 1 child (age 6 -12) = $64 + taxes per night
           </p>
           <p>
-            <span class="accommodation-header">what is included?</span><br><i class="fas fa-coffee fa-xs"></i><span style="padding-left: 0.5em">breakfast buffet<br></span><i class="fas fa-utensils fa-xs"></i><span style="padding-left: 0.5em"> lunch <strong>/</strong> dinner a la cart</span><br>
+            <span class="accommodation-header">what is included?</span><br><i class="fas fa-coffee fa-xs"></i><span class="accommodation-padding">breakfast buffet<br></span><i class="fas fa-utensils fa-xs"></i><span class="accommodation-padding"> lunch <strong>/</strong> dinner a la cart</span><br>
               ** <i class="fas fa-glass-martini-alt fa-xs"></i> excluded
           </p>
           <p>
@@ -77,12 +86,13 @@
           </p>
         </div>
         <div class="ocean-view">
+          <!-- <h3>M A H E K A L</h3> -->
           <div class="image-container">
             <img src="../assets/ocean-view.jpg"/>
             <div class="image-content">Ocean View</div>
           </div>
           <p>
-            <i class="fas fa-child fa-4x"></i><i class="fas fa-child fa-4x"></i><i class="fas fa-plus fa-sm"></i><i class="fas fa-child fa-2x"></i><i class="fas fa-equals fa-sm"></i><span style="font-size: 30px; padding-left: 0.5em;"><strong style="color: white">$393.01</strong></span><span>per night</span><br>
+            <i class="fas fa-child fa-4x"></i><i class="fas fa-child fa-4x"></i><i class="fas fa-plus fa-sm"></i><i class="fas fa-child fa-2x"></i><i class="fas fa-equals fa-sm"></i><span class="accommodation-prices accommodation-padding"><strong>$393.01</strong></span><span>per night</span><br>
              <i class="fas fa-angle-right fa-sm"></i> 2 adults and 1 child (4 yrs and younger)<br>
           </p>
           <p>
@@ -91,7 +101,7 @@
           </p>
           <p>
               <span class="accommodation-header">what is included?</span><br>
-              <i class="fas fa-coffee fa-xs"></i><span style="padding-left: 0.5em">breakfast buffet<br></span><i class="fas fa-utensils fa-xs"></i><span style="padding-left: 0.5em"> lunch <strong>/</strong> dinner a la cart</span><br>
+              <i class="fas fa-coffee fa-xs"></i><span class="accommodation-padding">breakfast buffet<br></span><i class="fas fa-utensils fa-xs"></i><span class="accommodation-padding"> lunch <strong>/</strong> dinner a la cart</span><br>
                ** <i class="fas fa-glass-martini-alt fa-xs"></i> excluded
           </p>
           <p>
@@ -103,6 +113,93 @@
         </div>
       </div>
     </div>
+    <div class="slide mahekal-accommodation">
+      <h3>ACCOMMODATION <span style="color: black;"> #GRANDHYATT</span></h3>
+      <div class="grand-hyatt">
+      <div class="image-container">
+        <img class="king-hyatt" src="https://assets.hyatt.com/content/dam/hyatt/hyattdam/images/2015/08/21/0856/Grand-Hyatt-Playa-Del-Carmen-Resort-P284-Plunge-Pool-Suite.jpg/Grand-Hyatt-Playa-Del-Carmen-Resort-P284-Plunge-Pool-Suite.16x9.jpg">
+        <div class="image-content">King</div>
+        </div>
+        <div>
+          <p>
+             <i class="fas fa-child fa-4x"></i><i class="fas fa-plus fa-sm"></i><i class="fas fa-child fa-4x"></i><i class="fas fa-equals fa-sm"></i><span class="accommodation-padding"> starting </span> <span class="accommodation-prices"><strong> $220.45 </strong></span><span>per night</span><br>(taxes & fees included)<br>
+             <i class="fas fa-angle-right fa-sm"></i> 2 adults. Children over 12 years or older are considered an adult.<br>
+          </p>
+          <p>
+              <span class="accommodation-header">what is included?</span><br>
+              <span>price above is room only, however, the following are available: <br></span>
+              <i class="fas fa-coffee fa-xs"></i><span class="accommodation-padding">bed and breakfast = starting $263.29 per night<br></span><i class="fas fa-utensils fa-xs"></i><i class="fas fa-glass-martini-alt fa-xs"></i><span class="accommodation-padding"> all inclusive = starting $430.04 per night</span><br>
+          </p>
+           <p>
+          <span class="accommodation-header">how far from the venue?</span><br>
+          <i class="fas fa-walking"></i><span class="accommodation-padding"> 11-15 min<br></span>
+          <i class="fas fa-car-side"></i><span class="accommodation-padding"> 8 min</span>
+        </p>
+          <p>
+            <i class="fas fa-info-circle"></i> For more information, visit <a href="https://www.hyatt.com/en-US/hotel/mexico/grand-hyatt-playa-del-carmen-resort/cunpc" target="_blank">Grand Hyatt</a>
+          </p>
+        </div>
+      </div>
+        <div class="grand-hyatt">
+      <div class="image-container">
+        <img src="../assets/hyatt-double.jpeg">
+        <div class="image-content">Queen</div>
+        </div>
+        <div>
+          <p>
+             <i class="fas fa-child fa-4x"></i><i class="fas fa-plus fa-sm"></i><i class="fas fa-child fa-4x"></i><i class="fas fa-equals fa-sm"></i><span class="accommodation-padding"> starting </span><span class="accommodation-prices"><strong> $242.27</strong></span><span>per night</span><br>(taxes & fees included)<br>
+             <i class="fas fa-angle-right fa-sm"></i> 2 adults. Children over 12 years or older are considered an adult.<br>
+          </p>
+          <p>
+              <span class="accommodation-header">what is included?</span><br>
+              <span>price above is room only, however, the following are available: <br></span>
+              <i class="fas fa-coffee fa-xs"></i><span class="accommodation-padding">bed and breakfast = starting $285.11 per night <br></span><i class="fas fa-utensils fa-xs"></i><i class="fas fa-glass-martini-alt fa-xs"></i><span class="accommodation-padding"> all inclusive = starting $449.67 per night</span><br>
+          </p>
+           <p>
+          <span class="accommodation-header">how far from the venue?</span><br>
+          <i class="fas fa-walking"></i><span class="accommodation-padding"> 11-15 min<br></span>
+          <i class="fas fa-car-side"></i><span class="accommodation-padding"> 8 min</span>
+        </p>
+          <p>
+            <i class="fas fa-info-circle"></i> For more information, visit <a href="https://www.hyatt.com/en-US/hotel/mexico/grand-hyatt-playa-del-carmen-resort/cunpc" target="_blank">Grand Hyatt</a>
+          </p>
+        </div>
+      </div>
+        <div class="book-now">
+          <button class="book-now-bttn" onclick="window.open('https://www.hyatt.com/en-US/hotel/mexico/grand-hyatt-playa-del-carmen-resort/cunpc/rooms')">BOOK NOW</button>
+        </div>
+    </div>
+    <div class="slide mahekal-accommodation">
+      <div class="other-req">
+        <h3>ACCOMMODATION <span style="color: black;"> #AIRBNB</span></h3>
+      <div class="image-container">
+        <img src="../assets/airbnb.jpg">
+         <div class="image-content">Private Room/Apartment</div>
+      </div>
+       <p>
+          <i class="fas fa-child fa-4x"></i><i class="fas fa-child fa-4x"></i>(<i class="fas fa-plus fa-sm"></i>) <i class="fas fa-equals fa-sm"></i><span class="accommodation-prices accommodation-padding"><strong>$16 - $99 </strong></span><span>per night</span><br>(taxes & fees not included)<br>
+          <i class="fas fa-angle-right fa-sm"></i> 2 adults or more.<br>
+      </p>
+      <p>
+          <span class="accommodation-header">what is included?</span><br>
+          <span>varies per listing, <br>but may include private pool!</span>
+          <!-- <i class="fas fa-coffee fa-xs"></i><span class="accommodation-padding">bed and breakfast = starting $285.11 per night <br></span><i class="fas fa-utensils fa-xs"></i><i class="fas fa-glass-martini-alt fa-xs"></i><span class="accommodation-padding"> all inclusive = starting $449.67 per night</span><br> -->
+      </p>
+      <p>
+        <span class="accommodation-header">**please book according to reviews</span><br>
+      </p>
+      <p>
+        <i class="fas fa-info-circle"></i> For more information, visit <a href="https://www.airbnb.com/s/Playa-del-Carmen--Mexico/homes?adults=2&children=0&checkin=2020-09-04&checkout=2020-09-07&source=mc_search_bar&click_referer=t%3ASEE_ALL%7Csid%3A52824cbb-9676-4103-ba3b-21bc791b3083%7Cst%3ALANDING_PAGE_MARQUEE&title_type=NONE&refinement_paths%5B%5D=%2Fhomes" target="_blank">
+        airbnb</a>
+      </p>
+      <div class="book-now">
+          <button class="book-now-bttn" onclick="window.open('https://www.airbnb.com/s/Playa-del-Carmen--Mexico/homes?adults=2&children=0&checkin=2020-09-04&checkout=2020-09-07&source=mc_search_bar&click_referer=t%3ASEE_ALL%7Csid%3A52824cbb-9676-4103-ba3b-21bc791b3083%7Cst%3ALANDING_PAGE_MARQUEE&title_type=NONE&refinement_paths%5B%5D=%2Fhomes')">SEARCH NOW</button>
+        </div>
+      </div>
+    </div>
+     <template slot="prevButton"><i class="fas fa-angle-double-left"></i></template>
+    <template slot="nextButton"><i class="fas fa-angle-double-right"></i></template>
+  </agile>
    
     <div>
       <table>
@@ -171,9 +268,13 @@
 </template>
 
 <script>
+import { VueAgile } from 'vue-agile';
 
 export default {
   name: "LocationDetails",
+  components: {
+    agile: VueAgile
+  },
   data() {
     return {
       center: { lat: 21.1617854, lng: -86.8510468 },
@@ -274,9 +375,9 @@ table {
   padding: 2%;
 }
 
-table img {
-  width: 75px;
-  height: 75px;
+.amenities img {
+  width: 50%;
+  height: 75%;
 }
 
 .map-container {
@@ -297,32 +398,34 @@ table img {
   background-color: red;
 }
 
-.amenities {
-  padding-left: 15%;
-  padding-right: 15%;
-}
 
-.accommodation img {
-  width: 95%;
+.accommodation img, .image-container img {
+  width: 90%;
   padding-top: 2%;
 }
 
-.garden-view, .ocean-view {
-  display: inline-block;
-  width: 45%;
-  margin: 2% 2% 2% 2%;
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgba(255, 255, 255, 0);
-  background-color:rgba(255, 255, 255, 0.23);
+.king-hyatt {
+  height: 390px;
 }
 
 .mahekal-accommodation {
   background-image: url("../assets/brick-wall.png");
   background-color: #33BDFE;
-  opacity: 0.9;
-  background-attachment: fixed;
-  margin-top: 2%;
+  opacity: 0.9;  
+  margin-left: auto;
+  margin-right: auto;
+  /* background-attachment: fixed; */
+  /* margin-top: 2%; */
+}
+
+.garden-view, .ocean-view, .grand-hyatt, .other-req {
+  display: inline-block;
+  width: 45%;
+  margin: 1% 2% 1% 2%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(255, 255, 255, 0);
+  background-color:rgba(255, 255, 255, 0.23);
 }
 
 .intro-accommodation p {
@@ -333,6 +436,7 @@ table img {
 .image-container {
   position: relative;
   text-align: center;
+  margin-bottom: 1%;
 }
 
 .image-content {
@@ -367,8 +471,8 @@ a {
 }
 
 .book-now {
-  margin-bottom: 2%;
-  padding-bottom: 2%;
+  margin-bottom: 1%;
+  padding-bottom: 1%;
 }
 
 .accommodation-header {
@@ -376,4 +480,29 @@ a {
   color: white;
 }
 
+.accommodation-prices {
+  font-size: 30px; 
+  color: white;
+}
+
+.accommodation-padding {
+  padding-left: 0.5em;
+}
+
+.amenities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
+}
+
+.amenities div {
+  width: 15%;
+  height: 15%;
+  margin: 3%;
+}
+
+/* .mahekal-title {
+  text-align: left;
+} */
 </style>

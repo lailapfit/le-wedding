@@ -5,7 +5,9 @@ import Location from "./views/Location.vue";
 import Rsvp from "./views/Rsvp.vue";
 import Accommodation from "./views/Accommodation.vue";
 import LocalKnowledge from "./views/LocalKnowledge.vue";
-import Itinerary from "./views/Itinerary";
+import Itinerary from "./views/Itinerary.vue";
+import Faq from "./views/Faq.vue";
+import Utility from "./views/Utility.vue";
 
 
 Vue.use(Router);
@@ -37,7 +39,7 @@ export default new Router({
     {
       path: "/accommodation",
       name: "accommodation",
-      component: Accommodation
+      component: Accommodation,
     },
     {
       path: "/localknowledge",
@@ -48,6 +50,16 @@ export default new Router({
       path: "/itinerary",
       name: "itinerary",
       component: Itinerary
+    },
+    {
+      path: "/faq",
+      name: "faq",
+      component: Faq,
+    },
+    {
+      path: "/utility",
+      name: "utility",
+      component: Utility
     }
   ]
 });

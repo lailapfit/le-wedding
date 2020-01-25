@@ -2,6 +2,7 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import * as VueGoogleMaps from "vue2-google-maps";
+import VShowSlide from 'v-show-slide';
 import VModal from 'vue-js-modal';
 
 Vue.config.productionTip = false;
@@ -12,6 +13,8 @@ Vue.use(VueGoogleMaps, {
     libraries: "places"
   }
 });
+
+Vue.use(VShowSlide);
 
 
 new Vue({

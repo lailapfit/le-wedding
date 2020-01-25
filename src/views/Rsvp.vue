@@ -17,8 +17,9 @@
       </div>
       <div class="section-content bttn">
         <i class="fas fa-child fa-3x"></i><br><br>
-        <button @click="handleClick()">WILL ATTEND</button>&nbsp;
-        <button>WILL NOT ATTEND</button><br><br><br><br><br><br>
+        <button @click="handleClick()">RSVP</button>&nbsp;
+        <!-- <button>WILL NOT ATTEND</button> -->
+        <br><br><br><br><br><br>
       </div>
     </div>
      <div id="io">
@@ -33,9 +34,13 @@
       </div>
     <div class="section-content bttn">
       <i class="fas fa-child fa-3x"></i><br><br>
-      <button class="attend">WILL ATTEND</button>&nbsp;
-      <button>WILL NOT ATTEND</button><br><br><br>
+      <button @click="welcomeClick()">RSVP</button>&nbsp;
+      <!-- <button>WILL NOT ATTEND</button> -->
+      <br><br><br>
     </div>
+    <div id="io2">
+    <formio src="https://brinjrhlcnmaclj.form.io/welcomedinner" v-on:submit="submit"></formio>
+  </div>
   </div>
   </div>
 
@@ -44,8 +49,9 @@
 
 <script>
   import { Form } from 'vue-formio';
+  
   export default {
-      name: 'io',
+      name: 'rsvp',
       components: { 
         formio: Form 
         },
@@ -53,6 +59,10 @@
         handleClick: function() {
           let attend = document.getElementById("io");
           attend.style.display = "block";
+        },
+        welcomeClick: function() {
+          let welcome = document.getElementById("io2");
+          welcome.style.display = "block";
         }
       }
   }
@@ -60,7 +70,7 @@
 </script>
 
 <style scoped>
-#io {
+#io, #io2 {
   width: 50%;
   transform: translate(50%);
   display: none;
