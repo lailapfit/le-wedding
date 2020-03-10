@@ -2,7 +2,7 @@ import Vue from "vue";
 import Router from "vue-router";
 import Welcome from "./views/Welcome.vue";
 import Location from "./views/Location.vue";
-import Rsvp from "./views/Rsvp.vue";
+import Invitations from "./views/Invitations.vue";
 import Accommodation from "./views/Accommodation.vue";
 import LocalKnowledge from "./views/LocalKnowledge.vue";
 import Itinerary from "./views/Itinerary.vue";
@@ -32,9 +32,9 @@ export default new Router({
        // import(/* webpackChunkName: "about" */ "./views/About.vue")
     },
     {
-      path: "/rsvp",
-      name: "rsvp",
-      component: Rsvp,
+      path: "/invitations",
+      name: "invitations",
+      component: Invitations,
     },
     {
       path: "/accommodation",

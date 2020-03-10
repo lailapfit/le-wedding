@@ -1,6 +1,6 @@
 <template>
   <div class="faq">
-    <questions msg="FAQ" />
+    <questions msg="frequently asked questions" />
   </div>
 </template>
 

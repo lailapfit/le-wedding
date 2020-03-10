@@ -4,20 +4,67 @@
         href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
         integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" 
         crossorigin="anonymous">
-    <div id="nav">
-     Laila & Cuong
-     <router-link to="/">Welcome</router-link> |
-      <router-link to="/location">Location</router-link>  |
-      <router-link to="/rsvp">RSVP</router-link>  |
-      <!-- <router-link to="/accommodation">Accommodation</router-link> |  -->
-      <router-link to="/localknowledge"> Local Knowledge</router-link>  |
-      <router-link to="/itinerary">Itinerary</router-link>   |
-      <router-link to="/faq">FAQ</router-link>   |
-      <router-link to="/utility">Calculator</router-link>
+    <fixed-header>
+    <nav class="navbar">
+      <router-link class="col-auto mr-auto" to="/">Laila & Cuong</router-link>
+      <div id="navbar-right" class="col-auto">        
+      <router-link to="/"> Welcome |</router-link>
+      <router-link to="/location"> Venue |</router-link>
+      <router-link to="/invitations"> RSVP |</router-link>
+      <!-- <router-link class="dropdown-item" to="/localknowledge"> Local Knowledge</router-link>  | -->
+      <!-- <router-link class="dropdown-item" to="/itinerary">Itinerary</router-link>   | -->
+      <router-link to="/faq"> FAQ |</router-link> 
+      <router-link to="/utility"> Budget</router-link>
+      </div>
+     <div id="hamburger" class="dropdown" style="display:none">
+       <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+       <i class="fas fa-bars"></i></a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a href="#" class="dropdown-item"><router-link to="/">Welcome</router-link></a>
+          <a href="#" class="dropdown-item"><router-link  to="/location">Venue</router-link></a>
+          <a href="#" class="dropdown-item"><router-link  to="/rsvp">RSVP</router-link></a>
+      <!-- <router-link class="dropdown-item" to="/localknowledge"> Local Knowledge</router-link>  | -->
+      <!-- <router-link class="dropdown-item" to="/itinerary">Itinerary</router-link>   | -->
+      <a href="#" class="dropdown-item"><router-link  to="/faq">FAQ</router-link></a>   
+      <a href="#" class="dropdown-item"><router-link to="/utility">Budget</router-link></a>
     </div>
-    <router-view />
+     </div>
+    </nav>
+    </fixed-header>
+     <router-view />
   </div>
 </template>
+
+<script>
+import FixedHeader from 'vue-fixed-header'
+ 
+export default {
+  components: {
+    FixedHeader
+  },
+  methods: {
+    displayHamburger() {
+       if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+          let hamburger = document.getElementById('hamburger');
+          hamburger.style.display = "block";
+          let navbar = document.getElementById('navbar-right');
+          navbar.style.display = "none";
+        } else {
+          let hamburger = document.getElementById('hamburger');
+          hamburger.style.display = "none";
+          let navbar = document.getElementById('navbar-right');
+          navbar.style.display = "block";
+        }
+    }
+  },
+  created: function() {
+    window.addEventListener('scroll', this.displayHamburger);
+  },
+  destroyed: function() {
+    window.removeEventListener('scroll', this.displayHamburger);
+  }
+}
+</script> 
 
 <style>
 #app {
@@ -26,23 +73,36 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  /* rgba(57, 87, 61) */
 }
-#nav {
-  padding-top: 2%;
-  padding-bottom: 1%;
-}
-#nav a {
+.navbar {
+  color: #99621E;
+  font-size: 14px;
   font-weight: bold;
-  color: #1C95E3;
+  width: 100vw;
+}
+
+.navbar.vue-fixed-header--isFixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  /* display: grid; */
+}
+
+.navbar a {
+  font-weight: bold;
+  color: #99621E;
   text-decoration: none;
+  font-size: 14px;
 }
 
-#nav a:first-child {
+/* .navbar a:first-child {
   padding-left: 60%;
-}
+} */
 
-#nav a.router-link-exact-active {
-  color: black;
+.navbar a.router-link-exact-active {
+  color: #D38B5D;
 }
 
 .agile__nav-button {
@@ -107,4 +167,23 @@
   width: 100%;
 }
 
+span.addeventatc_icon.atc_node.notranslate {
+  background-image: none;
+}
+
+span.rsvp-bttn.atc_node.notranslate {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+}
+
+.btn-secondary {
+  background-color: transparent;
+}
+
+.navbar {
+  float: left;  
+
+}
+/* .navbar-left a.router-link-exact-active.router-link-active {
+  float: left;  
+} */
 </style>

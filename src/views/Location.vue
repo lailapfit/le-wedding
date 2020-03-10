@@ -1,6 +1,6 @@
 <template>
   <div class="location">
-    <location-details msg="WELCOME TO MAHEKAL BEACH RESORT" />
+    <location-details msg="mahekal beach resort" />
   </div>
 </template>
 

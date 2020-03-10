@@ -1,6 +1,6 @@
 <template>
     <div class="utility">
-    <Calculator msg="Budget" />
+    <Calculator msg="trip calculator" />
     </div>
 </template>
 

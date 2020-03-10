@@ -1,6 +1,6 @@
 <template>
     <div class="welcome">
-    <Landing msg="WE'RE FINALLY DOING THIS" />
+    <Landing msg="finally" />
     </div>
 </template>
 
