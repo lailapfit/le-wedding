@@ -3,7 +3,8 @@
     <div class="between-1">
       <div class="intro background-img-720">
         <div class="center">
-          <h1>{{ msg }}</h1>
+          <h1 class="intro-text">{{ msg }}</h1>
+          <router-link class="button rsvp-button" to="/rsvp">RSVP</router-link>
         </div>
       </div>
     </div>
@@ -682,5 +683,37 @@ a {
     text-align: left;
     letter-spacing: 5px;
     opacity: 0.5;
+}
+
+.button {
+  color: white;
+  border: 2px solid #1e90ff;
+  background-color: #1e90ff;
+  border-radius: 10px;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  opacity: 0.9;
+}
+
+.button:hover {
+  background: #d38b5d;
+  border: 2px solid #d38b5d;
+  opacity: 0.9;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.rsvp-button {
+    margin-top: 5%;
+    padding: 5px 25px;
+    font-size: 14px;
+}
+
+.intro-text {
+  font-size: 40px;
 }
 </style>
