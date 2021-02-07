@@ -3,7 +3,8 @@
     <div class="between-1">
       <div class="intro background-img-720">
         <div class="center">
-          <h1>{{ msg }}</h1>
+          <h1 class="intro-text">{{ msg }}</h1>
+          <router-link class="button welcome-rsvp-button" to="/rsvp">RSVP</router-link>
         </div>
       </div>
       <div class="location">
@@ -64,16 +65,15 @@
             <br />With that, we have decided to postpone our wedding celebrations.
             <br />At this time,  our wedding is tentatively scheduled for <strong>August 21, 2021</strong>. 
             <br />
-            <br />We extend our apologies for some of you who have already made reservations. We hoped to see you the following year. 
+            <br />We extend our apologies for some of you who have already made reservations. 
             <br />
             <br />We asked kindly for everyone to understand that we did not make this decision lightly. Your health is our utmost concern. 
             <br/>
-            <br />Be safe, wash your hands, wear masks and take social distancing
-            <strong>
-              <i>seriously</i>
-            </strong>.
+            <br />We will be streaming parts of our wedding so you can attend from the comfort and safety of your home!
             <br />
-            <br />Hopefully, we will all see you soon.
+            <br />If you decide to attend in person, please refer to the <a href="https://wwwnc.cdc.gov/travel/notices/covid-4/coronavirus-mexico" target="_blank">CDC</a> guidelines on their new travel requirements to Mexico.
+            <br />
+            <br />Be safe. Hopefully, we will all see you soon.
             <br />
             <br />- L+H
           </h5>
@@ -215,5 +215,15 @@ h3 {
 
 #covidModal {
   opacity: 0.9;
+}
+
+.welcome-rsvp-button {
+    margin-top: 5%;
+    padding: 5px 25px;
+    font-size: 14px;
+}
+
+.intro-text {
+  font-size: 40px;
 }
 </style>

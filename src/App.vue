@@ -20,9 +20,9 @@
           <router-link class="dropdown-item" to="/">Welcome</router-link>
           <router-link class="dropdown-item" to="/location">Venue</router-link>
           <router-link class="dropdown-item" to="/rsvp">RSVP</router-link>
-        <router-link class="dropdown-item" to="/faq">FAQ</router-link>
-        <router-link class="dropdown-item" to="/utility">Budget</router-link>
-    </div>
+          <router-link class="dropdown-item" to="/faq">FAQ</router-link>
+          <router-link class="dropdown-item" to="/utility">Budget</router-link>
+        </div>
      </div>
     </nav>
     </fixed-header>

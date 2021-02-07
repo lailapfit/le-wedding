@@ -13,10 +13,10 @@
             Ceremony: La Fuega Beach
             <br />5:00 PM - 6:00 PM
             <br />
-            <br />Cocktail Hour: Firepit
+            <br />Cocktail Hour: Garden
             <br />6:00 PM - 7:00 PM
             <br />
-            <br />Reception: Las Olas Restaurant
+            <br />Reception: Palmas
             <br />7:00 PM - 11:00 PM
           </p>
           <p class="card-text">Buffet style dinner, open bar, and lots of dancing!</p>
@@ -40,7 +40,7 @@
             <span class="end">08/21/2021 11:00 PM</span>
             <span class="timezone">America/Los_Angeles</span>
             <span class="title">Laila and Cuong's Wedding</span>
-            <span class="description">We're so excited you're joining us to celebrate our wedding on Labor Day Weekend!</span>
+            <span class="description">We're so excited you're joining us to celebrate our wedding on August 21, 2021!</span>
             <span class="location">Playa del Carmen, Mexico</span>
           </button>
         </div>
@@ -66,7 +66,7 @@
             <br />
             <br />6:00 PM - 8:00 PM
           </p>
-          <p class="card-text">Firepit</p>
+          <p class="card-text">TBD</p>
           <p class="card-text">
             There will be a taco bar in addition to refreshing drinks.
             <br />Can't wait to see you!
@@ -91,7 +91,7 @@
             <span class="end">08/20/2021 08:00 PM</span>
             <span class="timezone">America/Los_Angeles</span>
             <span class="title">Laila and Cuong's Welcome Dinner</span>
-            <span class="description">We're so excited you're joining us to celebrate our wedding on Labor Day Weekend!</span>
+            <span class="description">We're so excited you're joining our welcome dinner to kick off our wedding weekend!</span>
             <span class="location">Playa del Carmen, Mexico</span>
           </button>
         </div>
