@@ -30,7 +30,7 @@
         <h5>Do I need a passport or visa to enter Mexico?</h5>
         <ul v-show-slide="featuresOpen1" class="features">
           <h5>
-            Yes, yes you do. Citizens and Permenant Residents (Green Card) of the US need their passports to enter Mexico.
+            Yes, yes you do need a passport to enter Mexico. Citizens and Permenant Residents (Green Card) of the US need their passports to enter Mexico.
             <br />
             <br />Visa is not needed!
             <br />
@@ -295,13 +295,6 @@
           class="toggle-features"
         >{{ featuresOpen3 ? 'Hide' : 'View' }}</button>
       </div>
-      <!-- <div class="accordion">
-      <h2>MAHEKAL - WHICH ROOM TO CHOOSE <i class="fas fa-question-circle"></i></h2>
-      <ul v-show-slide="featuresOpen4" class="features">
-        <li>The airport to go to is Cancun International Airport (CUN)</li>
-      </ul>
-       <button @click="toggleFeatures4" class="toggle-features">{{ featuresOpen4 ? 'Hide Features4' : 'View Features' }}</button>
-      </div>-->
       <div class="accordion">
         <h2>
           <img class="icon" src="../assets/dresscode.png" />DRESS CODE
@@ -314,11 +307,9 @@
             <br />
             <br />Wedding Day
             <br />
-            <br />The gents: The groom and groomsmen are not wearing a tux, it's not recommended that you do either unless you don't mind sweating profusely.
+            <br />Gents: The groom and groomsmen are not wearing a tux, and it's not recommended that you do either unless you don't mind sweating profusely.
             <br />
-            <br />The ladies: BEACHY VIBES, if you'd like to go formal no one is going to get mad at you. The ceremony and cocktail hour will be taken place at the beach (yes sand), however, the reception will be indoors. If you'd like to wear heels, wedged ones might be more practical and comfortable!
-            <br />
-            <br />Bamboo handheld fans will be given to everyone during the ceremony.
+            <br />Ladies: Beachy vibes, if you'd like to go formal no one is going to get mad at you. The ceremony and cocktail hour will be taken place at the beach (yes sand), however, the reception will be indoors. If you'd like to wear heels, wedged ones might be more practical and comfortable!
           </h5>
         </ul>
         <button
@@ -331,26 +322,29 @@
           <img class="icon" src="../assets/palm.png" /> VENUE DETAILS
         </h2>
         <ul v-show-slide="featuresOpen7" class="features">
-          <li>The airport to go to is Cancun International Airport (CUN)</li>
+          <h5>The welcome dinner, ceremony, and reception will be held at Mahekal Beach Resorts. 
+            Please see the <router-link class="button" to="/location">location details</router-link> for more information.
+          </h5>
         </ul>
         <button
           @click="toggleFeatures7"
           class="toggle-features"
         >{{ featuresOpen7 ? 'Hide' : 'View' }}</button>
       </div>
-      <div class="accordion">
+      <!-- <div class="accordion">
         <h2>
           WHAT ARE THE
           <img class="icon" src="../assets/bride.png" /> PAYING?
         </h2>
         <ul v-show-slide="featuresOpen5" class="features">
-          <li>The airport to go to is Cancun International Airport (CUN)</li>
+          <h5>1. The Welcome Dinner will feature a taco bar and drinks!</h5>
+          <h5>2. The Reception will consist of open bar and buffet style dinner.</h5>
         </ul>
         <button
           @click="toggleFeatures5"
           class="toggle-features"
         >{{ featuresOpen5 ? 'Hide' : 'View' }}</button>
-      </div>
+      </div> -->
       <div class="accordion">
         <h2>
           <i class="fas fa-shopping-basket"></i> HOW CLOSE ARE WE TO... THINGS?

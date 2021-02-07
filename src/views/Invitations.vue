@@ -1,6 +1,6 @@
 <template>
     <div class="invitations">
-      <Rsvp></Rsvp>  
+      <Rsvp/> 
     </div>
 </template>
 

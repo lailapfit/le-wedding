@@ -1,14 +1,14 @@
 <template>
   <div class="invitations">
     <div class="center">
-      <span>rsvp by july 5, 2020</span>
+      <span>rsvp by july 21, 2021</span>
     </div>
 
     <div class="sections row">
       <div class="rsvp col card">
         <h1 class="card-header">Wedding</h1>
         <div class="section-content card-body">
-          <p class="card-title">SATURDAY, SEPTEMBER 5, 2020</p>
+          <p class="card-title">SATURDAY, AUGUST 21, 2021</p>
           <p class="card-text">
             Ceremony: La Fuega Beach
             <br />5:00 PM - 6:00 PM
@@ -36,8 +36,8 @@
             </span>
             <span class="rsvp-bttn"> Add to Calendar</span>
             <span class="calname">LailaAndCuongsWedding</span>
-            <span class="start">09/05/2020 05:00 PM</span>
-            <span class="end">09/05/2020 11:00 PM</span>
+            <span class="start">08/21/2021 05:00 PM</span>
+            <span class="end">08/21/2021 11:00 PM</span>
             <span class="timezone">America/Los_Angeles</span>
             <span class="title">Laila and Cuong's Wedding</span>
             <span class="description">We're so excited you're joining us to celebrate our wedding on Labor Day Weekend!</span>
@@ -54,7 +54,7 @@
         <r-formio></r-formio>
         </div>
         <div class="modal-footer">
-        <button class="close-modal" @click="hideRsvpModal()">Close</button>
+        <button type="button" class="close-modal" @click="hideRsvpModal()">Close</button>
         </div>
         </div>
       </modal>
@@ -62,7 +62,7 @@
         <h1 class="card-header">Welcome Dinner</h1>
         <div class="section-content card-body">
           <p class="card-title">
-            FRIDAY, SEPTEMBER 4, 2020
+            FRIDAY, AUGUST 20, 2021
             <br />
             <br />6:00 PM - 8:00 PM
           </p>
@@ -87,8 +87,8 @@
             </span>
             <span class="rsvp-bttn"> Add to Calendar</span>
             <span class="calname">LailaAndCuongsWedding</span>
-            <span class="start">09/04/2020 06:00 PM</span>
-            <span class="end">09/04/2020 08:00 PM</span>
+            <span class="start">08/20/2021 06:00 PM</span>
+            <span class="end">08/20/2021 08:00 PM</span>
             <span class="timezone">America/Los_Angeles</span>
             <span class="title">Laila and Cuong's Welcome Dinner</span>
             <span class="description">We're so excited you're joining us to celebrate our wedding on Labor Day Weekend!</span>
@@ -119,7 +119,7 @@ import rsvpFormio from "./RsvpFormio.vue";
 import welcomeDinnerFormio from "./WelcomeDinnerFormio.vue";
 
 export default {
-  name: "Rsvp",
+  name: "rsvpFormio",
   components: {
     formio: Form,
     "r-formio": rsvpFormio,

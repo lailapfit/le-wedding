@@ -178,7 +178,7 @@
           <div class="book-now">
             <button
               class="book-now-bttn"
-              onclick="window.open('https://reservations.travelclick.com/85296?groupID=2466922#/guestsandrooms')"
+              onclick="window.open('https://reservations.travelclick.com/85296?groupID=2833024&hotelID=85296#/datesofstay')"
             >BOOK NOW</button>
           </div>
         </div>
@@ -373,6 +373,10 @@
         <i class="fas fa-angle-double-right"></i>
       </template>
     </agile>
+
+    <div>
+      
+    </div>
 
     <div>
       <table>

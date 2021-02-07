@@ -19,7 +19,7 @@ Vue.use(VueGoogleMaps, {
 
 Vue.use(VShowSlide);
 Vue.use(BootstrapVue);
-Vue.use(VModal);
+Vue.use(VModal,{ dynamicDefault: { draggable: true, resizable: true } });
 
 new Vue({
   router,

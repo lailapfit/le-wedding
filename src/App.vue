@@ -10,23 +10,18 @@
       <div id="navbar-right" class="col-auto">        
       <router-link to="/"> Welcome |</router-link>
       <router-link to="/location"> Venue |</router-link>
-      <router-link to="/invitations"> RSVP |</router-link>
-      <!-- <router-link class="dropdown-item" to="/localknowledge"> Local Knowledge</router-link>  | -->
-      <!-- <router-link class="dropdown-item" to="/itinerary">Itinerary</router-link>   | -->
+      <router-link to="/rsvp"> RSVP |</router-link>
       <router-link to="/faq"> FAQ |</router-link> 
-      <router-link to="/utility"> Budget</router-link>
       </div>
      <div id="hamburger" class="dropdown" style="display:none">
-       <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
-       <i class="fas fa-bars"></i></a>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <a href="#" class="dropdown-item"><router-link to="/">Welcome</router-link></a>
-          <a href="#" class="dropdown-item"><router-link  to="/location">Venue</router-link></a>
-          <a href="#" class="dropdown-item"><router-link  to="/rsvp">RSVP</router-link></a>
-      <!-- <router-link class="dropdown-item" to="/localknowledge"> Local Knowledge</router-link>  | -->
-      <!-- <router-link class="dropdown-item" to="/itinerary">Itinerary</router-link>   | -->
-      <a href="#" class="dropdown-item"><router-link  to="/faq">FAQ</router-link></a>   
-      <a href="#" class="dropdown-item"><router-link to="/utility">Budget</router-link></a>
+       <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+       <i class="fas fa-bars"></i></button>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+          <router-link class="dropdown-item" to="/">Welcome</router-link>
+          <router-link class="dropdown-item" to="/location">Venue</router-link>
+          <router-link class="dropdown-item" to="/rsvp">RSVP</router-link>
+        <router-link class="dropdown-item" to="/faq">FAQ</router-link>
+        <router-link class="dropdown-item" to="/utility">Budget</router-link>
     </div>
      </div>
     </nav>
@@ -92,7 +87,7 @@ export default {
 
 .navbar a {
   font-weight: bold;
-  color: #99621E;
+  color: #D38B5D;
   text-decoration: none;
   font-size: 14px;
 }
@@ -102,7 +97,7 @@ export default {
 } */
 
 .navbar a.router-link-exact-active {
-  color: #D38B5D;
+  color: #99621E;
 }
 
 .agile__nav-button {
@@ -181,9 +176,12 @@ span.rsvp-bttn.atc_node.notranslate {
 
 .navbar {
   float: left;  
-
 }
-/* .navbar-left a.router-link-exact-active.router-link-active {
-  float: left;  
-} */
+
+#dropdownMenuButton {
+  background-color: #D38B5D;
+  opacity: 0.7;
+  color: white;
+}
+
 </style>
