@@ -1,11 +1,11 @@
 <template>
-  <div class="invitations">
+  <div class="rsvp">
     <div class="center">
       <span>rsvp by july 21, 2021</span>
     </div>
 
     <div class="sections row">
-      <div class="rsvp col card">
+      <div class="rsvp-container col card">
         <h1 class="card-header">Wedding</h1>
         <div class="section-content card-body">
           <p class="card-title">SATURDAY, AUGUST 21, 2021</p>
@@ -58,7 +58,7 @@
         </div>
         </div>
       </modal>
-      <div class="rsvp col card">
+      <div class="rsvp-container col card">
         <h1 class="card-header">Welcome Dinner</h1>
         <div class="section-content card-body">
           <p class="card-title">
@@ -114,29 +114,27 @@
 </template>
 
 <script>
-import { Form } from "vue-formio";
 import rsvpFormio from "./RsvpFormio.vue";
 import welcomeDinnerFormio from "./WelcomeDinnerFormio.vue";
 
 export default {
-  name: "rsvpFormio",
+  name: "rsvp",
   components: {
-    formio: Form,
     "r-formio": rsvpFormio,
     "w-formio": welcomeDinnerFormio
   },
   methods: {
-    reload: function() {
-      if (localStorage.getItem("reloaded")) {
-        // The page was just reloaded. Clear the value from local storage
-        // so that it will reload the next time this page is visited.
-        localStorage.removeItem("reloaded");
-      } else {
-        // Set a flag so that we know not to reload the page twice.
-        localStorage.setItem("reloaded", "1");
-        location.reload();
-      }
-    },
+    // reload: function() {
+    //   if (localStorage.getItem("reloaded")) {
+    //     // The page was just reloaded. Clear the value from local storage
+    //     // so that it will reload the next time this page is visited.
+    //     localStorage.removeItem("reloaded");
+    //   } else {
+    //     // Set a flag so that we know not to reload the page twice.
+    //     localStorage.setItem("reloaded", "1");
+    //     location.reload();
+    //   }
+    // },
     showRsvpModal() {
       this.$modal.show("rsvp-formio");
     },
@@ -150,9 +148,9 @@ export default {
       this.$modal.hide("welcome-formio");
     }
   },
-  mounted() {
-    this.reload();
-  }
+  // mounted() {
+  //   this.reload();
+  // }
 };
 </script>
 
@@ -178,7 +176,7 @@ img {
   padding-bottom: 3%;
   padding-top: 3%;
 }
-.invitations {
+.rsvp {
   background-image: url("../assets/holdinghands.jpg");
   background-size: cover;
   background-attachment: fixed;
@@ -196,7 +194,7 @@ img {
   opacity: 0.5;
 }
 
-.rsvp {
+.rsvp-container {
   border: 1px solid #e98a5e;
   border-radius: 20px;
   margin-bottom: 5%;
