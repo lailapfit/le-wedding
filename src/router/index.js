@@ -1,14 +1,6 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Welcome from "../views/Welcome.vue";
-import Location from "../views/Location.vue";
-import Invitations from "../views/Invitations.vue";
-import Accommodation from "../views/Accommodation.vue";
-import LocalKnowledge from "../views/LocalKnowledge.vue";
-import Itinerary from "../views/Itinerary.vue";
-import Faq from "../views/Faq.vue";
-import Utility from "../views/Utility.vue";
-
 
 Vue.use(Router);
 
@@ -24,37 +16,37 @@ export default new Router({
     {
       path: "/location",
       name: "location",
-      component: Location
+      component: () => import('../views/Location.vue')
     },
     {
       path: "/rsvp",
       name: "rsvp",
-      component: Invitations
+      component: () => import('../views/Invitations.vue')
     },
     {
       path: "/accommodation",
       name: "accommodation",
-      component: Accommodation
+      component: () => import('../views/Accommodation.vue')
     },
     {
       path: "/localknowledge",
       name: "localknowledge",
-      component: LocalKnowledge,
+      component: () => import('../views/LocalKnowledge.vue')
     },
     {
       path: "/itinerary",
       name: "itinerary",
-      component: Itinerary
+      component: () => import('../views/Itinerary.vue')
     },
     {
       path: "/faq",
       name: "faq",
-      component: Faq,
+      component: () => import('../views/Faq.vue')
     },
     {
       path: "/utility",
       name: "utility",
-      component: Utility
+      component: () => import('../views/Utility.vue')
     }
   ]
 });
