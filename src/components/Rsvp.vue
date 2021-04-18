@@ -1,7 +1,7 @@
 <template>
   <div class="rsvp">
     <div class="center">
-      <span>rsvp by july 21, 2021</span>
+      <h1 class="rsvp-heading">rsvp by july 21, 2021</h1>
     </div>
 
     <div class="sections row">
@@ -45,19 +45,21 @@
           </button>
         </div>
       </div>
-      <modal name="rsvp-formio" height="auto" :scrollable="true">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title">Wedding: Ceremony & Reception</h2>
+      <div class="modal-container">
+        <modal name="rsvp-formio" height="auto" :scrollable="true">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">Wedding: Ceremony & Reception</h2>
+            </div>
+          <div class="modal-body"> 
+            <r-formio></r-formio>
           </div>
-        <div class="modal-body"> 
-        <r-formio></r-formio>
-        </div>
-        <div class="modal-footer">
-        <button type="button" class="close-modal" @click="hideRsvpModal()">Close</button>
-        </div>
-        </div>
-      </modal>
+          <div class="modal-footer">
+            <button type="button" class="close-modal" @click="hideRsvpModal()">Close</button>
+          </div>
+          </div>
+        </modal>
+      </div>
       <div class="rsvp-container col card">
         <h1 class="card-header">Welcome Dinner</h1>
         <div class="section-content card-body">
@@ -203,7 +205,7 @@ img {
   column-count: 2;
   background-color: #e98a5e;
   opacity: 0.9;
-  color: black;
+  color: white;
   font-weight: bold;
 }
 
@@ -274,4 +276,30 @@ button {
   color: white;
 }
 
+@media screen and (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+  .rsvp-container {
+    max-width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .rsvp-heading {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .rsvp-container {
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .rsvp-heading {
+    font-size: 22px;
+    margin-right: 5%;
+    margin-left: 5%;
+  } 
+}
 </style>
