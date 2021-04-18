@@ -1,7 +1,7 @@
 <template>
   <div class="rsvp">
     <div class="center">
-      <h1 class="rsvp-heading">rsvp by july 21, 2021</h1>
+      <h1 class="rsvp-heading">rsvp by <br>july 21, 2021</h1>
     </div>
 
     <div class="sections row">
@@ -209,6 +209,10 @@ img {
   font-weight: bold;
 }
 
+.rsvp-heading {
+  background-color: rgba(0, 0, 0, 30);
+}
+
 .section-content {
   padding-bottom: 5%;
   padding-top: 5%;
@@ -287,6 +291,8 @@ button {
   }
   .rsvp-heading {
     font-size: 35px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 
@@ -297,9 +303,7 @@ button {
     margin-left: auto;
   }
   .rsvp-heading {
-    font-size: 22px;
-    margin-right: 5%;
-    margin-left: 5%;
+    font-size: 20px;
   } 
 }
 </style>
