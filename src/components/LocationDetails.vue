@@ -323,7 +323,7 @@
           </h3>
           <div class="image-container">
             <img src="../assets/airbnb.jpg" />
-            <div class="image-content">Private Room/Apartment</div>
+            <div class="image-content">Private Room/Apt</div>
           </div>
           <p>
             <i class="fas fa-child fa-4x"></i>
@@ -492,7 +492,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
 * {
   font-family: "Oswald", sans-serif;
 }
@@ -580,8 +580,6 @@ table {
   /* opacity: 0.9;   */
   margin-left: auto;
   margin-right: auto;
-  /* background-attachment: fixed; */
-  /* margin-top: 2%; */
 }
 
 .garden-view,
@@ -715,5 +713,32 @@ a {
 
 .intro-text {
   font-size: 40px;
+}
+
+@media screen and (max-width: 411px) { 
+  .accommodation-header, .accommodation-prices {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+  .intro-text {
+    margin-left: 8%;
+  }
+  .king-hyatt {
+    height: auto;
+  }
+  .mahekal-accommodation {
+    padding: 2% 0 4% 0;
+  }
+  .agile__nav-button {
+    display: none;
+  }
+  .agile__dots {
+    bottom: 3%;
+  }
+}
+
+@media screen and (max-width: 360px) { 
+  .accommodation-header, .accommodation-prices {
+    font-size: calc(14px + 6 * ((100vw - 320px) / 680));
+  }
 }
 </style>
