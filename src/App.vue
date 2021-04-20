@@ -68,6 +68,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  max-width: 100% !important; 
+  overflow-x: hidden;
+  position: relative;
   /* rgba(57, 87, 61) */
 }
 .navbar {
@@ -184,4 +187,13 @@ span.rsvp-bttn.atc_node.notranslate {
   color: white;
 }
 
+@media screen and (max-width: 768px) {
+  .v--modal {
+    width: 100% !important;
+    max-width: 85% !important;
+    left: 0 !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 </style>

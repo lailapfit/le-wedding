@@ -30,4 +30,10 @@ export default {
 .body {
   text-align: center;
 }
+
+/* @media screen and (max-width: 768px) {
+  .formio-attendance {
+    max-width: 50%;
+  }  
+}   */
 </style>
