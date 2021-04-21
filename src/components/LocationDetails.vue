@@ -715,7 +715,7 @@ a {
   font-size: 40px;
 }
 
-@media screen and (max-width: 411px) { 
+@media screen and (max-width: 428px) { 
   .accommodation-header, .accommodation-prices {
     font-size: calc(16px + 6 * ((100vw - 320px) / 680));
   }
