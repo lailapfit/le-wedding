@@ -192,8 +192,9 @@ img {
   margin-bottom: 5%;
   color: white;
   font-weight: bold;
-  letter-spacing: 25px;
+  letter-spacing: 4rem;
   opacity: 0.5;
+  width: 100%;
 }
 
 .rsvp-container {
@@ -211,6 +212,8 @@ img {
 
 .rsvp-heading {
   background-color: rgba(0, 0, 0, 30);
+  font-size: 4rem;
+  padding: 12px;
 }
 
 .section-content {
@@ -294,6 +297,9 @@ button {
     padding-right: 20px;
     padding-left: 20px;
   }
+  .center {
+    letter-spacing: 2rem;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -304,6 +310,9 @@ button {
   }
   .rsvp-heading {
     font-size: 20px;
+  }
+  .center {
+    letter-spacing: 1rem;
   } 
 }
 </style>
