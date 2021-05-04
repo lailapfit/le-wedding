@@ -301,15 +301,11 @@
         </h2>
         <ul v-show-slide="featuresOpen6" class="features">
           <h5>
-            Disclaimer
-            <br />
-            <br />Weather: EXTREMELY Tropical!
-            <br />
             <br />Wedding Day
             <br />
-            <br />Gents: The groom and groomsmen are not wearing a tux, and it's not recommended that you do either unless you don't mind sweating profusely.
+            <br />Gents: The groom and groomsmen are wearing suits and not tuxes. Totally up to you!
             <br />
-            <br />Ladies: Beachy vibes, if you'd like to go formal no one is going to get mad at you. The ceremony and cocktail hour will be taken place at the beach (yes sand), however, the reception will be indoors. If you'd like to wear heels, wedged ones might be more practical and comfortable!
+            <br />Ladies: Beachy vibes, if you'd like to go formal no one is going to get mad at you. The ceremony and reception will both be on the beach, please be mindful of your footwear.
           </h5>
         </ul>
         <button
@@ -331,65 +327,17 @@
           class="toggle-features"
         >{{ featuresOpen7 ? 'Hide' : 'View' }}</button>
       </div>
-      <!-- <div class="accordion">
-        <h2>
-          WHAT ARE THE
-          <img class="icon" src="../assets/bride.png" /> PAYING?
-        </h2>
-        <ul v-show-slide="featuresOpen5" class="features">
-          <h5>1. The Welcome Dinner will feature a taco bar and drinks!</h5>
-          <h5>2. The Reception will consist of open bar and buffet style dinner.</h5>
-        </ul>
-        <button
-          @click="toggleFeatures5"
-          class="toggle-features"
-        >{{ featuresOpen5 ? 'Hide' : 'View' }}</button>
-      </div> -->
       <div class="accordion">
         <h2>
           <i class="fas fa-shopping-basket"></i> HOW CLOSE ARE WE TO... THINGS?
         </h2>
         <ul v-show-slide="featuresOpen9" class="features">
-          <li>The airport to go to is Cancun International Airport (CUN)</li>
+          <h5>Mahekal Beach Resorts is on the strip of Playa del Carmen, so you will be close to restaurants, bars, and shopping!</h5>
         </ul>
         <button
           @click="toggleFeatures9"
           class="toggle-features"
         >{{ featuresOpen9 ? 'Hide' : 'View' }}</button>
-      </div>
-      <div class="accordion">
-        <h2>
-          <i class="fas fa-suitcase"></i> WHAT TO PACK?
-        </h2>
-        <ul v-show-slide="featuresOpen10" class="features">
-          <li>The airport to go to is Cancun International Airport (CUN)</li>
-        </ul>
-        <button
-          @click="toggleFeatures10"
-          class="toggle-features"
-        >{{ featuresOpen10 ? 'Hide' : 'View' }}</button>
-      </div>
-      <div class="accordion">
-        <h2>MISC</h2>
-        <ul v-show-slide="featuresOpen11" class="features">
-          <li>The airport to go to is Cancun International Airport (CUN)</li>
-        </ul>
-        <button
-          @click="toggleFeatures11"
-          class="toggle-features"
-        >{{ featuresOpen11 ? 'Hide' : 'View' }}</button>
-      </div>
-      <div class="accordion">
-        <h2>
-          <i class="fas fa-lock"></i> IS IT SAFE?
-        </h2>
-        <ul v-show-slide="featuresOpen8" class="features">
-          <li>The airport to go to is Cancun International Airport (CUN)</li>
-        </ul>
-        <button
-          @click="toggleFeatures8"
-          class="toggle-features"
-        >{{ featuresOpen8 ? 'Hide' : 'View' }}</button>
       </div>
     </div>
   </div>
@@ -459,7 +407,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
 .questions {
   background-image: url("../assets/stairs2.jpg");
   background-size: cover;
@@ -562,5 +510,15 @@ tr:nth-child(odd) {
   font-weight: bold;
   letter-spacing: 15px;
   opacity: 0.7;
+}
+
+@media screen and (max-width: 768px){
+  .accordion-grid-container{
+    display: block;
+    grid-template-columns: none;
+  }
+  .accordion {
+    margin-bottom: 5%;
+  }
 }
 </style>
