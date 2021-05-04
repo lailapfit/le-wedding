@@ -6,7 +6,7 @@
 
     <div class="sections row">
       <div class="rsvp-container col card">
-        <h1 class="card-header">Wedding</h1>
+        <h1 class="card-header text-shadow-md">Wedding</h1>
         <div class="section-content card-body">
           <p class="card-title">SATURDAY, AUGUST 21, 2021</p>
           <p class="card-text">
@@ -61,13 +61,10 @@
         </modal>
       </div>
       <div class="rsvp-container col card">
-        <h1 class="card-header">Welcome Dinner</h1>
+        <h1 class="card-header text-shadow-md">Welcome Dinner</h1>
         <div class="section-content card-body">
-          <p class="card-title">
-            FRIDAY, AUGUST 20, 2021
-            <br />
-            <br />6:00 PM - 8:00 PM
-          </p>
+          <p class="card-title">FRIDAY, AUGUST 20, 2021</p>
+          <p class="card-text">6:00 PM - 8:00 PM</p>
           <p class="card-text">TBD</p>
           <p class="card-text">
             There will be a taco bar in addition to refreshing drinks.
@@ -172,6 +169,11 @@ h2 {
   font-size: 22px;
 }
 
+.text-shadow-md {
+  color: #FFFFFF;
+  text-shadow: 2px 2px #000000;
+}
+
 img {
   width: 10%;
   height: 50%;
@@ -192,8 +194,9 @@ img {
   margin-bottom: 5%;
   color: white;
   font-weight: bold;
-  letter-spacing: 25px;
+  letter-spacing: 4rem;
   opacity: 0.5;
+  width: 100%;
 }
 
 .rsvp-container {
@@ -211,6 +214,8 @@ img {
 
 .rsvp-heading {
   background-color: rgba(0, 0, 0, 30);
+  font-size: 4rem;
+  padding: 12px;
 }
 
 .section-content {
@@ -218,6 +223,10 @@ img {
   padding-top: 5%;
   height: auto;
   text-align: center;
+}
+
+.card-title {
+  font-size: 18px;
 }
 
 .icon {
@@ -294,6 +303,9 @@ button {
     padding-right: 20px;
     padding-left: 20px;
   }
+  .center {
+    letter-spacing: 2rem;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -304,6 +316,9 @@ button {
   }
   .rsvp-heading {
     font-size: 20px;
+  }
+  .center {
+    letter-spacing: 1rem;
   } 
 }
 </style>

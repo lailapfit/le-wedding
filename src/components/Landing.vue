@@ -196,11 +196,11 @@ h3 {
 }
 
 .location {
-  padding: 1%;
+  padding: 2%;
 }
 
 .rsvp-respond {
-  padding: 1%;
+  padding: 2%;
 }
 
 .center h1 {
@@ -225,5 +225,23 @@ h3 {
 
 .intro-text {
   font-size: 40px;
+}
+
+@media screen and (max-width: 768px){
+  .countdown2 {
+    padding-top: 2%;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .countdown2 {
+    padding-top: 4%;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .countdown2 {
+    padding-top: 5%;
+  }
 }
 </style>
